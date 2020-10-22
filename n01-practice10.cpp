@@ -124,7 +124,16 @@ int main()
 	int a;
 	cin >> a;
 	node* root = new node(a);
+	cout << "Enter the numbers (727 to end the input)" << endl;
 	cin >> a;
+	while (a != 727)
+	{
+		root = insert(root, a);
+		cin >> a;
+	}
+	print_tree(root, 0);
+
+	cout << "Enter the numbers to insert (727 to end the input)" << endl;
 	while (a != 727)
 	{
 		root = insert(root, a);
