@@ -3,6 +3,8 @@
 #include <algorithm>
 using namespace std;
 
+//Задача 2 про расстановку скобок при умножении матриц
+
 void multiplyOrder(int p[], int length, int*res)
 {
 	int n = length - 1;
